@@ -13,6 +13,7 @@ public class UIHealthDisplay : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        healthText.text = "100";
         //Zacz¹æ nas³uchiwaæ player health event
         playerHealth.OnHealthChanged += OnHealthChanged;
         playerHealth.OnHealthInitialised += OnHealthInit;

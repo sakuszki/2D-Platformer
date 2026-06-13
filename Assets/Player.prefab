@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 3410297680829024306}
   - component: {fileID: 8252406767288866903}
   - component: {fileID: 7158422255563514333}
+  - component: {fileID: 7591257400730250901}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -243,8 +244,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpforce: 5
+  dashForce: 5
+  dashTime: 0.5
   maxspeed: 10
   stoppingforce: 5
+  enemyHitForce: 50
 --- !u!50 &3410297680829024306
 Rigidbody2D:
   serializedVersion: 5
@@ -348,3 +352,15 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &7591257400730250901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4889757455970073145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6544d7b51aa08240be270fad422e7c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -11,7 +12,7 @@ public class PlayerMotor : MonoBehaviour
     public float speed = 5;
     public float jumpforce = 5;
     public float dashForce = 5;
-    public float dashTime = 0,5f;
+    public float dashTime = 0.5f;
     public float maxspeed = 10;
     public float stoppingforce = 5;
     public float enemyHitForce = 50;
