@@ -404,6 +404,7 @@ GameObject:
   - component: {fileID: 1294371658}
   - component: {fileID: 1294371657}
   - component: {fileID: 1294371656}
+  - component: {fileID: 1294371659}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -472,6 +473,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1294371659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294371655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adf47eebdf5609d428bd153dec67c1cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1357988818
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,9 +671,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1536078168}
-        m_TargetAssemblyTypeName: SceneOpener, Assembly-CSharp
-        m_MethodName: OpenScene
+      - m_Target: {fileID: 1294371659}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadLevel1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -683,7 +696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.990566, g: 0.7335796, b: 0.8735539, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -720,7 +733,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b15bf1cf6cd7c014f821d4e869267ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToOpen: WelcomeScreen
 --- !u!1 &1675047665
 GameObject:
   m_ObjectHideFlags: 0
