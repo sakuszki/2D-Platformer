@@ -16,7 +16,9 @@ public class PlayerMotor : MonoBehaviour
     public float maxspeed = 10;
     public float stoppingforce = 5;
     public float enemyHitForce = 50;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Animator animator;
+
     private void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -46,6 +48,19 @@ public class PlayerMotor : MonoBehaviour
         {
             rigidbody2D.linearVelocityX = -maxspeed;
         }
+
+        if (rigidbody2D.linearVelocityX != 0)
+        {
+            animator.SetBool("isRunning", true);
+        }
+        else {
+            animator.SetBool("isRunning", false);
+        }
+        if (rigidbody2D.linearVelocityX < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else spriteRenderer.flipX = false;
     }
 
     private void LimitMaxSpeed()
